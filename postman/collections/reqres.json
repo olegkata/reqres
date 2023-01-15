@@ -38,6 +38,34 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "fetches a user id",
+			"id": "dc06e38b-d1be-44ae-8927-e23dd8f27882",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
