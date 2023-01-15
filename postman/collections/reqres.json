@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "018fb933-dfe1-4cf9-8bfe-b196e7acf084",
+		"name": "reqres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "23233318-018fb933-dfe1-4cf9-8bfe-b196e7acf084"
+	},
+	"item": [
+		{
+			"name": "fetches a users list",
+			"id": "ecc2fa34-8b0d-4e2f-88da-8dacca312208",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users?page=1&per_page=6",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "per_page",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c6685556-4545-49dd-803f-35d9857db38e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e9ac5a32-8ca9-465d-bc29-870c22e13b9d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "e4c5fbeb-3f7f-456c-a0fb-e417368b8aeb",
+			"key": "url",
+			"value": "https://reqres.in/api",
+			"type": "string"
+		}
+	]
+}
